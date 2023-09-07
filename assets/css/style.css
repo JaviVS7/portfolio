@@ -236,14 +236,19 @@ body {
   font-size: 0.8rem;
 }
 
+/* CONTENT */
+
 .layout__content {
   grid-area: "content";
+  height: inherit;
+  min-height: inherit;
   background-color: var(--main-color);
   border-radius: 0 10rem 10rem 0;
   /* border: 1px solid black; */
 }
 .content__page {
-  min-height: 100%;
+  height: inherit;
+  min-height: inherit;
   background-color: var(--backgound-color);
   border-radius: 3rem;
 
@@ -258,4 +263,14 @@ body {
   font-size: 1.2rem;
   font-weight: 100;
   color: var(--subtitle-color);
+}
+
+/* ABOUT ME */
+
+.content__about {
+  display: block;
+  height: inherit;
+  min-height: inherit;
+  overflow: auto;
+  padding: 2rem 3rem;
 }
