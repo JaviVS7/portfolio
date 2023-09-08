@@ -306,3 +306,29 @@ body {
 .title__color {
   color: var(--main-color);
 }
+
+/* About me - Personal Info */
+.personal-info__bio {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.personal-info__description {
+  flex-basis: 60%;
+  font-size: 1.1rem;
+}
+
+.personal-info__data {
+  flex-basis: 40%;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.personal-info__value {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
