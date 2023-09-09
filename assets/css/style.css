@@ -285,7 +285,8 @@ body {
   position: relative;
   font-size: 2.5rem;
 }
-.about__title::after {
+.about__title::after,
+.services__title::after {
   position: absolute;
   top: 1.5rem;
   left: 9rem;
@@ -301,6 +302,7 @@ body {
     transparent 100%
   );
   background-size: 0.4rem 0.4rem;
+  opacity: 0.3;
 }
 
 .title__color {
@@ -319,6 +321,7 @@ body {
 .personal-info__description {
   flex-basis: 60%;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 .personal-info__data {
@@ -331,4 +334,63 @@ body {
   color: var(--main-color);
   font-weight: 600;
   margin-right: 0.5rem;
+}
+
+/* About me - Services */
+.services__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.services__service {
+  flex-basis: calc(50% - 3rem);
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.services__header {
+  margin-bottom: 0.5rem;
+}
+
+.services__title {
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.service__title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.services__title::after {
+  position: absolute;
+  top: 1rem;
+  left: 6.5rem;
+  display: inline-block;
+  content: "";
+  width: 2.5rem;
+  height: 1.7rem;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    var(--main-color),
+    var(--main-color) 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 0.4rem 0.4rem;
+  opacity: 0.3;
+}
+
+.service__icon {
+  margin-bottom: 0.5rem;
+}
+.myicon {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+.service__description {
+  text-align: justify;
 }
