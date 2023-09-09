@@ -36,7 +36,8 @@ h6 {
   color: var(--title-color);
 }
 
-/* Main Styles */
+/* MAIN STYLES */
+/* ------------------------------------------------------- */
 
 body {
   background-image: url(../img/fondo.png);
@@ -63,7 +64,8 @@ body {
   /* border: 1px solid rgba(0, 0, 0, 0.25); */
 }
 
-/* Aside Styles*/
+/* ASIDE STYLES*/
+/* -------------------------------------------------------- */
 
 .layout__aside {
   grid-area: aside;
@@ -240,7 +242,8 @@ body {
   font-size: 0.8rem;
 }
 
-/* CONTENT */
+/* CONTENT - GENERAL */
+/* ---------------------------------------------------- */
 
 .layout__content {
   grid-area: "content";
@@ -269,9 +272,15 @@ body {
   color: var(--subtitle-color);
 }
 
-/* ABOUT ME */
+/* GENERAL
+  - ABOUT ME 
+  - CURRICULUM
 
-.content__about {
+---------------------------------------------------------------
+*/
+
+.content__about,
+.content__curriculum {
   display: block;
   height: inherit;
   min-height: inherit;
@@ -279,11 +288,13 @@ body {
   padding: 2.5rem 3rem;
 }
 
-.about__header {
+.about__header,
+.curriculum__header {
   margin-bottom: 3rem;
 }
 
-.about__title {
+.about__title,
+.curriculum__title {
   position: relative;
   font-size: 2.5rem;
 }
@@ -311,7 +322,7 @@ body {
   color: var(--main-color);
 }
 
-/* About me - Personal Info */
+/* ABOUT ME - Personal Info */
 .personal-info__bio {
   display: flex;
   flex-direction: row;
@@ -338,7 +349,7 @@ body {
   margin-right: 0.5rem;
 }
 
-/* About me - Services */
+/* ABOUT ME - Services */
 .services__container {
   display: flex;
   flex-direction: row;
@@ -396,3 +407,26 @@ body {
 .service__description {
   text-align: justify;
 }
+
+/* CURRICULUM - Shadow */
+
+.curriculum__title::after {
+  position: absolute;
+  top: 1.5rem;
+  left: 19rem;
+  display: inline-block;
+  content: "";
+  width: 9.5rem;
+  height: 2.2rem;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    var(--main-color),
+    var(--main-color) 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 0.4rem 0.4rem;
+  opacity: 0.3;
+}
+
+/* CURRICULUM - Left Side (Formation, Experience, ... */
