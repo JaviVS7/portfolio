@@ -158,7 +158,9 @@ body {
   width: 100%;
   text-align: center;
 }
-.menu__option:hover .menu__icon {
+
+.menu__option:hover .menu__icon,
+.menu__link--active .menu__icon {
   color: var(--main-color);
 }
 .menu__option:hover .menu__overlay {
