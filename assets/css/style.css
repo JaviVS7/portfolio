@@ -614,3 +614,22 @@ body {
   border-radius: 0.2rem;
   /* font-size: 0.9rem; */
 }
+
+/* CERTIFICATES */
+
+.certificates__header {
+  margin: 1.5rem 0;
+}
+
+.certificates__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.certificates__certificate {
+  flex-basis: calc(50% - 1.5rem);
+  border: 2px solid var(--main-color);
+  padding: 1rem;
+}
