@@ -3,7 +3,7 @@
   --main-color: #04b4e0;
 
   --white-color: #fff;
-  --gray-color: #ccc;
+  --gray-color: #666;
   --black-color: #000;
   --transparent-color: transparent;
 
@@ -13,6 +13,7 @@
   --link-color: #444;
   --text-color: #555;
   --icon-color: #aaa;
+  --element__color: #d3d3d3;
 
   /* --font: "Philosopher", sans-serif; */
   /* --max-width: 1400px; */
@@ -429,4 +430,99 @@ body {
   opacity: 0.3;
 }
 
+/* CURRICULUM */
+
+.curriculum__container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 2.1rem;
+}
+
 /* CURRICULUM - Left Side (Formation, Experience, ... */
+
+.curriculum__left {
+  flex-basis: 58%;
+}
+
+.left__training,
+.left__experience {
+  margin-bottom: 3rem;
+}
+
+.training__timeline,
+.experience__timeline {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.timeline__header {
+  text-align: right;
+}
+
+.timeline__year {
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__location {
+  display: block;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--subtitle-color);
+}
+
+.timeline__title {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-bottom: 0.2rem;
+}
+
+.timeline__description {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: var(--gray-color);
+}
+
+/* Divider */
+
+.timeline__separator {
+  position: absolute;
+  top: 0;
+  left: 19%;
+  bottom: -25px;
+  width: 1px;
+  background-color: var(--element__color);
+}
+.timeline__separator::before {
+  content: "";
+  position: absolute;
+  top: 0.15rem;
+  left: -0.35rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  opacity: 0.25;
+}
+.timeline__separator::after {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: -0.16rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  border: 1px solid var(--backgound-color);
+  opacity: 1;
+}
+/* CURRICULUM - Right Side (Formation, Experience, ... */
+
+.curriculum__right {
+  flex-basis: 40%;
+}
