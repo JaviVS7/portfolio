@@ -525,4 +525,92 @@ body {
 
 .curriculum__right {
   flex-basis: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dev-skills__header,
+.code-skills__header {
+  margin-bottom: 0.8rem;
+}
+
+.dev-skills__skill,
+.code-skills__skill {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 0.4rem;
+}
+
+.skill__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill__title {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.skill__indicator {
+  font-size: 0.6rem;
+  line-height: 1.5;
+  color: var(--subtitle-color);
+}
+
+.skill__prgressbar-container {
+  width: 100%;
+  height: 0.6rem;
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+}
+
+.skill__progressbar {
+  height: 0.5rem;
+  background-color: var(--main-color);
+  border: 2px solid var(--backgound-color);
+  border-radius: 1rem;
+}
+.skill__progressbar--p1 {
+  width: 90%;
+}
+.skill__progressbar--p2 {
+  width: 80%;
+}
+.skill__progressbar--p3 {
+  width: 85%;
+}
+.skill__progressbar--p4 {
+  width: 100%;
+}
+.skill__progressbar--p5 {
+  width: 75%;
+}
+.skill__progressbar--p6 {
+  width: 90%;
+}
+.skill__progressbar--p7 {
+  width: 95%;
+}
+
+/* SOFT SKILLS */
+.soft-skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.soft-skills__header {
+  margin-bottom: 1.5rem;
+}
+.soft-skills__skill {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 0.35rem;
+  margin-bottom: 0.3rem;
+  border-radius: 0.2rem;
+  /* font-size: 0.9rem; */
 }
