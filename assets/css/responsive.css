@@ -1,3 +1,6 @@
+.layout__menu-toggle {
+  display: none;
+}
 @media (max-width: 1480px) {
   .layout {
     /* display: none; */
@@ -16,7 +19,6 @@
 
 @media (max-width: 1260px) {
   .layout {
-    /* display: none; */
     min-width: 1050px;
     margin-left: 2rem;
   }
@@ -24,7 +26,6 @@
 
 @media (max-width: 1180px) {
   .layout {
-    /* display: none; */
     min-width: 1000px;
     margin-left: 2rem;
   }
@@ -46,6 +47,30 @@
     grid-template-columns: 100%;
   }
 
+  .layout__menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    /* color: var(--white-color); */
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: all 300 ease-in-out;
+  }
+
+  .fa-xmark {
+    display: none;
+  }
+
+  .layout__aside {
+    display: none;
+  }
+
   .layout__content {
     border-radius: 0;
     background-color: transparent;
@@ -59,6 +84,9 @@
 }
 
 @media (max-width: 800px) {
+  .content__page {
+    padding-bottom: 15rem;
+  }
   .personal-info__bio {
     flex-direction: column;
     gap: 1rem;
@@ -91,6 +119,10 @@
 }
 
 @media (max-width: 600px) {
+  .page__name {
+    font-size: 2rem;
+  }
+
   .services__container {
     flex-direction: column;
     gap: 1rem;
@@ -106,6 +138,25 @@
     gap: 3rem;
   }
 
+  .curriculum__title {
+    font-size: 1.5rem;
+  }
+  .curriculum__title::after {
+    top: 0.5rem;
+    left: 12rem;
+    content: "";
+    width: 5.5rem;
+    height: 2.2rem;
+    background-image: -webkit-repeating-radial-gradient(
+      center center,
+      var(--main-color),
+      var(--main-color) 1px,
+      transparent 0px,
+      transparent 100%
+    );
+    background-size: 0.4rem 0.4rem;
+    opacity: 0.3;
+  }
   .contact__container {
     flex-direction: column;
     gap: 2rem;
@@ -124,6 +175,6 @@
   .form__input--textarea {
     resize: none;
     width: 100%;
-    min-height: 30vh;
+    min-height: 15vh;
   }
 }
