@@ -46,12 +46,12 @@ body {
   background-image: url(../img/fondo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -20px -120px;
+  background-position: -1rem -8rem;
 }
 
 .layout {
   position: relative;
-  min-width: 1290px;
+  min-width: 1280px;
   min-height: 80vh;
   width: 70%;
   height: 80vh;
@@ -499,13 +499,13 @@ body {
 .timeline__separator {
   position: absolute;
   top: 0;
-  left: 19%;
-  bottom: -25px;
+  left: 5.2rem;
+  bottom: -2rem;
   width: 1px;
   background-color: var(--element__color);
 }
 .timeline__separator::before {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0.15rem;
   left: -0.35rem;
@@ -516,7 +516,7 @@ body {
   opacity: 0.25;
 }
 .timeline__separator::after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0.35rem;
   left: -0.16rem;
@@ -665,15 +665,15 @@ body {
 .contact__container {
   display: flex;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .contact__info {
-  flex-basis: 33%;
+  flex-basis: 30%;
 }
 
 .contact__form-container {
-  flex-basis: 66%;
+  flex-basis: 70%;
 }
 
 .contact__info {
@@ -700,17 +700,16 @@ body {
   font-size: 1rem;
 }
 
-.form__title {
+.contact__form-header {
   position: relative;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.3rem;
 }
 
 .contact__form {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  /* justify-content: center; */
+  gap: 1rem;
 }
 
 .form__left {
@@ -729,7 +728,7 @@ body {
 
 .form__input {
   position: relative;
-  /* width: 100%; */
+  width: 100%;
   display: block;
   border: 2px solid var(--element__color);
   border-radius: 0.3rem;
