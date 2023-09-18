@@ -79,8 +79,8 @@
     position: absolute;
     z-index: 99;
     max-width: 19rem;
-    min-height: 100%;
-    top: 0;
+    height: 100vh;
+    top: 0rem;
     border-radius: 0;
     overflow: auto;
     right: -100%;
