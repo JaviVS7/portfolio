@@ -82,7 +82,7 @@
     height: 100vh;
     top: 0rem;
     border-radius: 0;
-    overflow: auto;
+    /* overflow: auto; */
     right: -100%;
     opacity: 0;
     transition: all 400ms ease-in-out;
