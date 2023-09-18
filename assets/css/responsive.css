@@ -133,18 +133,20 @@
 
   .user-info__footer {
     position: static;
-    margin-top: 1rem;
+    /* margin-bottom: 15rem; */
   }
 
   .layout__content {
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 0;
     background-color: transparent;
   }
 
   .content__page {
     border-radius: 0;
-    min-height: 100vh;
     min-width: 100%;
+    min-height: 100%;
   }
 }
 

@@ -51,9 +51,7 @@ body {
 
 .layout {
   position: relative;
-  min-width: 1280px;
-  min-height: 80vh;
-  width: 70%;
+  max-width: 85%;
   height: 80vh;
   margin: 10vh auto;
   display: grid;
@@ -83,7 +81,7 @@ body {
   text-align: center;
   align-items: center;
   min-height: 100%;
-  min-width: 20rem;
+  min-width: 19rem;
   background-color: var(--main-color);
   color: var(--white-color);
   gap: 3rem;
@@ -195,7 +193,7 @@ body {
 .social__list {
   display: flex;
   flex-direction: row;
-  gap: 0 0.2rem;
+  gap: 0.2rem;
 }
 
 .social__option {
@@ -249,14 +247,11 @@ body {
 .layout__content {
   grid-area: content;
   height: inherit;
-  min-height: inherit;
   background-color: var(--main-color);
   border-radius: 0 10rem 10rem 0;
-  /* border: 1px solid black; */
 }
 .content__page {
   height: inherit;
-  min-height: inherit;
   background-color: var(--background-color);
   border-radius: 3rem;
 
@@ -286,20 +281,21 @@ body {
 .content__contact {
   display: block;
   height: inherit;
-  min-height: inherit;
   overflow: auto;
   padding: 2.5rem 3rem;
 }
 
 .about__header,
 .curriculum__header,
-.contact__header {
-  margin-bottom: 2rem;
+.contact__header,
+.portfolio__header {
+  margin-bottom: 1.5rem;
 }
 
 .about__title,
 .curriculum__title,
-.contact__title {
+.contact__title,
+.portfolio__title {
   position: relative;
   font-size: 2.5rem;
 }
@@ -331,19 +327,19 @@ body {
 .personal-info__bio {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 3rem;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .personal-info__description {
-  flex-basis: 60%;
+  flex-basis: 65%;
   font-size: 1.1rem;
   text-align: justify;
 }
 
 .personal-info__data {
-  flex-basis: 40%;
+  flex-basis: 35%;
   font-size: 1.1rem;
   line-height: 1.7;
 }
