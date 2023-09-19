@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     bars.forEach((b) => {
       if ((b.style.transform = "scale(0)")) b.style.transform = "scale(1)";
     });
-  }, 300);
+  }, 1000);
 });
