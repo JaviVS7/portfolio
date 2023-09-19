@@ -194,7 +194,7 @@
     width: 100%;
     background-color: var(--main-color);
     color: var(--white-color);
-    gap: 3rem;
+    gap: 2rem;
   }
   .user-info__name {
     font-size: 1.2rem;
