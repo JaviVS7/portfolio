@@ -547,6 +547,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
 }
 
 .skill__title {
@@ -557,7 +558,7 @@ body {
 .skill__indicator {
   font-size: 0.6rem;
   line-height: 1.5;
-  color: var(--subtitle-color);
+  color: var(--icon-color);
 }
 
 .skill__prgressbar-container {
