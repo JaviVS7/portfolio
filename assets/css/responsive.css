@@ -173,7 +173,10 @@
     flex-direction: column;
     gap: 2.5rem;
   }
-
+  .training__timeline,
+  .experience__timeline {
+    margin-left: -1.5rem;
+  }
   .timeline__description {
     font-size: 0.9rem;
   }
