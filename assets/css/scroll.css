@@ -1,8 +1,7 @@
 /* Scrollbar - Chrome*/
 
 :root {
-  --color-scrollbar: #d3d3d3;
-  --color-background-scrollbar: #eee;
+  --color-scrollbar: rgba(35, 79, 112, 0.7);
 }
 
 .content__page::-webkit-scrollbar {
