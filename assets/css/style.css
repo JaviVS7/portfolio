@@ -261,42 +261,43 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
+  padding-left: 2rem;
 }
 
 .page__svg {
   display: block;
-  margin-left: 3rem;
   width: 50%;
   /* flex-basis: 50%; */
 }
 .about__svg {
   display: block;
-  /* width: 50%; */
 }
 
 #ball-1 {
-  animation: flotate 5s linear infinite;
+  animation: flotate 4.5s ease-in-out infinite;
 }
 #ball-2 {
-  animation: flotate 4s linear infinite;
+  animation: flotate 4s ease-in-out infinite;
 }
 #ball-3 {
-  animation: flotate 6s linear infinite;
+  animation: flotate 5s linear infinite;
 }
 
 .page__description {
-  flex-basis: 50%;
-  padding: 0 4rem;
+  width: 50%;
 }
 
+.description__title {
+  font-size: 2rem;
+}
 .description__text {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 
 .content__about {
-  margin-top: 10rem;
+  margin-top: 8rem;
   padding: 3rem 7rem;
 }
 .description__about-text {
