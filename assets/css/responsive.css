@@ -221,7 +221,7 @@
 
   .page__main {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3.5rem;
     padding: 0;
   }
   .page__description {
@@ -241,7 +241,7 @@
   }
 
   .description__about-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .content__about {
