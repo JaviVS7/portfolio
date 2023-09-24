@@ -13,7 +13,7 @@
   --main-background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
   --link-color: #444;
-  /* --text-color: #02343f; */
+  --text-color: #02343f;
   --icon-color: #dda94b;
   --element__color: #d3d3d3;
 
@@ -153,7 +153,7 @@ body {
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 .menu__option {
@@ -242,38 +242,89 @@ body {
 
 .layout__content {
   grid-area: content;
-  height: inherit;
+  height: 85vh;
   background-color: var(--main-color);
   border-radius: 0 10rem 10rem 0;
 }
 
 .content__page {
-  height: inherit;
+  height: 100%;
   background-color: var(--second-color);
   border-radius: 3rem;
+  overflow-y: auto;
+}
 
+.page__main {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.page__job {
+.page__svg {
+  display: block;
+  margin-left: 3rem;
+  flex-basis: 50%;
+}
+.about__svg {
+  display: block;
+  width: 20rem;
+}
+
+#ball-1 {
+  animation: flotate 5s linear infinite;
+}
+#ball-2 {
+  animation: flotate 4s linear infinite;
+}
+#ball-3 {
+  animation: flotate 6s linear infinite;
+}
+
+.page__description {
+  flex-basis: 50%;
+  padding: 0 4rem;
+}
+
+.description__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.content__about {
+  margin-top: 10rem;
+  padding: 3rem 7rem;
+}
+.description__about-text {
   font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--gray-color);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+@keyframes flotate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* GENERAL
-  - ABOUT ME 
+
   - CURRICULUM
   - CONTACT
 
 ---------------------------------------------------------------
 */
 
-.content__about,
 .content__curriculum,
 .content__contact {
   display: block;

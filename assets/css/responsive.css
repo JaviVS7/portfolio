@@ -121,13 +121,30 @@
     min-width: 100%;
     min-height: 100%;
   }
+  .page__main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .page__svg {
+    display: block;
+    width: 80%;
+    margin: 0;
+    padding-top: 2rem;
+
+    /* margin-left: 3rem; */
+    flex-basis: 30%;
+  }
+  .description__title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  .description__text {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .content__page {
-    /* padding-bottom: 15rem; */
-    /* margin-bottom: 5rem; */
-  }
   .content__page::-webkit-scrollbar {
     display: none;
   }
@@ -144,6 +161,15 @@
     overflow: auto;
     padding: 2rem 4rem 10rem 4rem;
   }
+
+  .description__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .description__text {
+    font-size: 2.5rem;
+  }
+
   .personal-info__bio {
     flex-direction: column;
     gap: 1rem;
@@ -192,6 +218,17 @@
     padding: 2rem 2rem 8rem 2rem;
   }
 
+  .page__svg {
+    flex-basis: 15%;
+  }
+  .description__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .description__text {
+    font-size: 2.1rem;
+  }
+
   .aside__user-info {
     display: flex;
     flex-direction: column;
@@ -203,6 +240,7 @@
     color: var(--white-color);
     gap: 2rem;
   }
+
   .user-info__name {
     font-size: 1.2rem;
   }
