@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     if (!visible) {
       aside.classList.add("layout__aside--visible");
-      button.style.background = "var(--background-color)";
+      button.style.background = "var(--second-color)";
       icon_bars.style.display = "none";
       icon_xmark.style.display = "inline-block";
     } else {

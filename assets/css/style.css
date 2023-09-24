@@ -266,11 +266,12 @@ body {
 .page__svg {
   display: block;
   margin-left: 3rem;
-  flex-basis: 50%;
+  width: 50%;
+  /* flex-basis: 50%; */
 }
 .about__svg {
   display: block;
-  width: 20rem;
+  /* width: 50%; */
 }
 
 #ball-1 {
