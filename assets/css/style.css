@@ -7,6 +7,7 @@
 
   --white-color: #fff;
   --gray-color: #777;
+  --gray-night-color: #333;
   --black-color: #000;
   --transparent-color: transparent;
 
@@ -25,7 +26,7 @@
 /* General Styles */
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  color: var(--text-color);
+  color: var(--main-color);
   /* overflow: hidden; */
 }
 
@@ -35,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--main-color);
+  /* color: var(--main-color); */
 }
 
 /* MAIN STYLES */
@@ -85,7 +86,7 @@ body {
   width: 100%;
   background-color: var(--main-color);
   color: var(--second-color);
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .user-info__container-img {
@@ -128,9 +129,8 @@ body {
 }
 
 .user-info__job {
-  color: var(--gray-color);
+  color: var(--text-color);
   font-weight: 100;
-  opacity: 0.8;
 }
 
 /* NAVEGATION MENU */
@@ -208,7 +208,6 @@ body {
 .social__option:hover {
   transform: scale(1.1);
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .user-info__btns {

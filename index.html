@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
     <!-- <link rel="stylesheet" href="assets/css/animated_bg.css" /> -->
 
     <!-- Scripts js -->
@@ -21,12 +22,12 @@
     <title>Portfolio</title>
   </head>
 
-  <body>
+  <body data-dark>
     <!-- Main Layout -->
     <div class="layout">
       <!-- User info (Aside) -->
       <aside class="layout__aside">
-        <section class="aside__user-info">
+        <section data-dark class="aside__user-info">
           <div class="user-info__general">
             <div class="user-info__container-img">
               <img
@@ -36,7 +37,6 @@
               />
             </div>
             <h2 class="user-info__name">Jesus Javier Valdes</h2>
-            <h3 class="user-info__job">Web Developer</h3>
           </div>
 
           <!-- Navegation -->
@@ -45,21 +45,21 @@
               <li class="menu__option">
                 <a class="menu__link menu__link--active" href="index.html">
                   <i class="menu__icon fa-solid fa-house"></i>
-                  <span class="menu__overlay">Home</span>
+                  <span data-dark="" class="menu__overlay">Home</span>
                 </a>
               </li>
 
               <li class="menu__option">
                 <a class="menu__link" href="curriculum.html">
                   <i class="menu__icon fa-solid fa-graduation-cap"></i>
-                  <span class="menu__overlay">Curriculum</span>
+                  <span data-dark="" class="menu__overlay">Curriculum</span>
                 </a>
               </li>
 
               <li class="menu__option">
                 <a class="menu__link" href="portfolio.html">
                   <i class="menu__icon fa-solid fa-briefcase"></i>
-                  <span class="menu__overlay">Portfolio</span>
+                  <span data-dark="" class="menu__overlay">Portfolio</span>
                 </a>
               </li>
 
@@ -73,7 +73,15 @@
               <li class="menu__option">
                 <a class="menu__link" href="contact.html">
                   <i class="menu__icon fa-solid fa-envelope"></i>
-                  <span class="menu__overlay">Contact</span>
+                  <span data-dark="" class="menu__overlay">Contact</span>
+                </a>
+              </li>
+
+              <hr class="manu__separator" />
+
+              <li class="menu__option">
+                <a class="menu__btn--theme" href="#">
+                  <i class="menu__icon fa-solid fa-moon"></i>
                 </a>
               </li>
             </ul>
@@ -119,8 +127,8 @@
       </div>
 
       <!-- Main content -->
-      <main class="layout__content">
-        <section class="content__page">
+      <main data-dark class="layout__content">
+        <section data-dark class="content__page">
           <div class="page__main">
             <div class="page__svg">
               <svg
@@ -158,7 +166,8 @@
                     fill="#6C63FF"
                   />
                   <path
-                    id="Vector_6"
+                    data-dark=""
+                    id="Tshirt-1"
                     d="M55.262 295.411L55.075 295.155C45.0894 281.536 60.1078 248.81 62.373 244.066C59.6832 243.216 57.3791 241.483 55.8532 239.164C54.3273 236.845 53.6739 234.082 54.0043 231.346L54.9808 223.26L55.9986 215.329L48.7068 208.225L48.6863 208.048L44.4901 172.279L38.3888 148.522C36.0899 139.54 36.2858 130.125 38.9564 121.242C41.6271 112.359 46.6762 104.328 53.5855 97.9743L67.6885 95.7927L84.8281 79.7051H112.468L121.945 88.5257C139.636 91.5483 142.676 90.5614 157.872 108.326L150.967 163.558L149.244 171.156L149.249 181.462L153.629 186.203C155.206 187.911 156.353 189.954 156.976 192.17C157.6 194.386 157.684 196.713 157.222 198.966L156.646 201.771C161.162 203.656 165.472 237.168 166.502 241.849L168.04 248.841C169.356 250.532 178.042 261.815 178.042 264.899C178.042 265.362 177.692 265.81 176.939 266.307C171.019 270.211 147.419 297.911 132.938 292.266C117.514 286.258 56.1984 295.271 55.5806 295.363L55.262 295.411Z"
                     fill="#234E70"
                   />
@@ -168,7 +177,8 @@
                     fill="#FFB6B6"
                   />
                   <path
-                    id="Vector_8"
+                    data-dark=""
+                    id="Tshirt-3"
                     d="M23.1287 156.686L24.8844 138.062C25.5451 131.052 27.622 124.239 30.9955 118.014C34.369 111.789 38.9726 106.275 44.5415 101.79C48.0016 99.0235 52.187 97.2551 56.6246 96.6844C61.0623 96.1137 65.5754 96.7636 69.6539 98.5605C75.1656 101.032 79.5082 105.451 81.8036 110.923C84.0989 116.395 84.1758 122.512 82.0186 128.037C75.4622 144.787 77.8297 162.502 65.0454 164.661L66.4344 171.099L53.8644 211.06L18.0631 207.02L23.1287 156.686Z"
                     fill="#234E70"
                   />
@@ -178,7 +188,8 @@
                     fill="#FFB6B6"
                   />
                   <path
-                    id="Vector_10"
+                    data-dark=""
+                    id="Tshirt-2"
                     d="M140.532 174.24L129.395 159.005C125.204 153.272 122.217 146.787 120.608 139.925C118.998 133.062 118.797 125.958 120.016 119.02C120.788 114.724 122.777 110.725 125.759 107.473C128.741 104.221 132.598 101.847 136.892 100.618C142.726 98.9905 148.976 99.5815 154.379 102.272C159.782 104.962 163.935 109.55 165.998 115.109C172.241 131.973 195.012 159.69 186.766 169.448L192.128 173.446L200.232 195.936L170.386 215.617L140.532 174.24Z"
                     fill="#234E70"
                   />
@@ -431,14 +442,14 @@
                     <path
                       id="Vector_60"
                       d="M27.9251 509.517C38.3772 509.517 46.8503 501.342 46.8503 491.258C46.8503 481.175 38.3772 473 27.9251 473C17.4731 473 9 481.175 9 491.258C9 501.342 17.4731 509.517 27.9251 509.517Z"
-                      fill="#234E70"
+                      fill="#FF6584"
                     />
                   </g>
                   <g id="ball-2">
                     <path
                       id="Vector_61"
                       d="M764.39 437.213C774.742 437.213 783.133 429.039 783.133 418.955C783.133 408.871 774.742 400.697 764.39 400.697C754.039 400.697 745.648 408.871 745.648 418.955C745.648 429.039 754.039 437.213 764.39 437.213Z"
-                      fill="#234E70"
+                      fill="#80634C"
                     />
                   </g>
                   <g id="ball-1">
@@ -1065,5 +1076,7 @@
         </section>
       </main>
     </div>
+    <!-- Scripts -->
+    <script type="module" src="assets/js/app.js" defer></script>
   </body>
 </html>
