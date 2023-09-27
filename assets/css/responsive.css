@@ -52,7 +52,7 @@
     top: 0;
     right: 0;
     z-index: 99;
-    min-width: 55%;
+    min-width: 60%;
     height: 100vh;
     border-radius: 0;
     overflow: auto;
@@ -231,7 +231,7 @@
     display: block;
     height: inherit;
     /* overflow: auto; */
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 2rem 7rem 2rem;
   }
 
   .page__main {
@@ -294,7 +294,7 @@
   }
 
   .user-info__btns {
-    width: 65%;
+    width: 60%;
   }
   .user-info__btn {
     font-size: 1rem;

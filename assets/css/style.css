@@ -1,9 +1,11 @@
 /* CUSTOM PROPERTIES */
 :root {
   --main-color: #234e70;
+  --main-dark-color: #343148;
   --main-alpha-color: rgba(35, 79, 112, 0.5);
   --second-color: #f0edcc;
   --second-alpha-color: rgba(240, 237, 204, 0.5);
+  --third-color: #d4b996;
 
   --white-color: #fff;
   --gray-color: #777;
