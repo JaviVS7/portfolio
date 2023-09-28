@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
 
     <!-- Scripts js -->
     <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
@@ -23,12 +24,12 @@
     <title>Curriculum</title>
   </head>
 
-  <body>
+  <body data-dark>
     <!-- Main Layout -->
     <div class="layout">
       <!-- User info (Aside) -->
       <aside class="layout__aside">
-        <section class="aside__user-info">
+        <section data-dark class="aside__user-info">
           <div class="user-info__general">
             <div class="user-info__container-img">
               <img
@@ -38,7 +39,6 @@
               />
             </div>
             <h2 class="user-info__name">Jesus Javier Valdes</h2>
-            <h3 class="user-info__job">Web Developer</h3>
           </div>
 
           <!-- Navegation -->
@@ -47,21 +47,21 @@
               <li class="menu__option">
                 <a class="menu__link" href="index.html">
                   <i class="menu__icon fa-solid fa-house"></i>
-                  <span class="menu__overlay">Home</span>
+                  <span data-dark="" class="menu__overlay">Home</span>
                 </a>
               </li>
 
               <li class="menu__option">
                 <a class="menu__link menu__link--active" href="curriculum.html">
                   <i class="menu__icon fa-solid fa-graduation-cap"></i>
-                  <span class="menu__overlay">Curriculum</span>
+                  <span data-dark="" class="menu__overlay">Curriculum</span>
                 </a>
               </li>
 
               <li class="menu__option">
                 <a class="menu__link" href="portfolio.html">
                   <i class="menu__icon fa-solid fa-briefcase"></i>
-                  <span class="menu__overlay">Portfolio</span>
+                  <span data-dark="" class="menu__overlay">Portfolio</span>
                 </a>
               </li>
 
@@ -75,7 +75,15 @@
               <li class="menu__option">
                 <a class="menu__link" href="contact.html">
                   <i class="menu__icon fa-solid fa-envelope"></i>
-                  <span class="menu__overlay">Contact</span>
+                  <span data-dark="" class="menu__overlay">Contact</span>
+                </a>
+              </li>
+
+              <hr class="manu__separator" />
+
+              <li class="menu__option">
+                <a class="menu__btn--theme" href="#">
+                  <i class="menu__icon fa-solid fa-moon"></i>
                 </a>
               </li>
             </ul>
@@ -113,11 +121,13 @@
           <div class="user-info__footer">&copy 2024 Javier Valdes Web</div>
         </section>
       </aside>
+
       <!-- Menu Responsive -->
       <div class="layout__menu-toggle">
         <i class="menu-toggle__icon fa-solid fa-bars"></i>
         <i class="menu-toggle__icon fa-solid fa-xmark"></i>
       </div>
+
       <!-- Main - Curriculum -->
       <main class="layout__content">
         <section class="content__page content__curriculum">
@@ -381,43 +391,13 @@
                   <!-- TE AMO!!! -->
                 </div>
               </article>
-              <!-- 3 -->
-              <article class="certificates__certificate">
-                <div class="certificate__logo">
-                  <img
-                    src="assets/img/certificado-1.png"
-                    alt="first-certificate"
-                    class="certificate__img"
-                  />
-                </div>
-                <div class="certificate__content">
-                  <h3 class="certificate__title">HTML5, CSS3 and JavaScript</h3>
-                  <span class="certificate__id">ID Verification: 123456 </span>
-                  <span class="certificate__date">Date: June,10-2023 </span>
-                  <!-- TE AMO!!! -->
-                </div>
-              </article>
-              <!-- 4 -->
-              <article class="certificates__certificate">
-                <div class="certificate__logo">
-                  <img
-                    src="assets/img/certificado-1.png"
-                    alt="first-certificate"
-                    class="certificate__img"
-                  />
-                </div>
-                <div class="certificate__content">
-                  <h3 class="certificate__title">HTML5, CSS3 and JavaScript</h3>
-                  <span class="certificate__id">ID Verification: 123456 </span>
-                  <span class="certificate__date">Date: June,10-2023 </span>
-                  <!-- TE AMO!!! -->
-                </div>
-              </article>
             </div>
           </section>
         </section>
       </main>
     </div>
     <!-- <script src="assets/js/reveal.js"></script> -->
+    <!-- Scripts -->
+    <script type="module" src="assets/js/app.js" defer></script>
   </body>
 </html>
