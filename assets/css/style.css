@@ -256,6 +256,30 @@ body {
   overflow-y: auto;
 }
 
+.page__header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  justify-items: start;
+  margin: 1rem 3rem 0rem 4rem;
+}
+
+.header__elem {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.elem__size {
+  position: absolute;
+  top: -0.8rem;
+  left: -1.5rem;
+  font-size: 3.2rem;
+  font-style: italic;
+}
+
+.elem__color {
+  color: var(--icon-color);
+}
 .page__main {
   display: flex;
   flex-direction: row;
